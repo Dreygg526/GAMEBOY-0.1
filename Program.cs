@@ -4,6 +4,7 @@
 //with methods
 
 using System;
+using System.Collections.Generic;
 class Program {
   static void Main() 
     {
@@ -262,10 +263,16 @@ class Program {
      Console.WriteLine("---------------------------");
      Console.WriteLine("|Selection of Action Games|");
      Console.WriteLine("---------------------------");
-     Console.WriteLine("1. Mortal combat X");
-     Console.WriteLine("2. Marvel Vs Capcom");
-     Console.WriteLine("3. Ghostrider V.25");
-     Console.WriteLine("0. Back");
+     List<string> Action = new List<string>();
+     Action.Add("1. Mortal combat X");
+     Action.Add("2. Marvel Vs Capcom");
+     Action.Add("3. Ghostrider V.25");
+     Action.Add("0. Back");
+
+     foreach (String Actgame in Action)
+     {
+        Console.WriteLine(Actgame);
+     }
      }
      static void Coder()
     {
@@ -273,11 +280,17 @@ class Program {
      Console.WriteLine("-------------------------");
      Console.WriteLine("|SELECT GAMES TO INSTALL|");
      Console.WriteLine("-------------------------");
-     Console.WriteLine("Action");
-     Console.WriteLine("RPG");
-     Console.WriteLine("Shooting");
-     Console.WriteLine("Press 0 to Close");
-     Console.WriteLine("");
+     List<string>Menu0 = new List<string>();
+     Menu0.Add("Action");
+     Menu0.Add("RPG");
+     Menu0.Add("Shooting");
+     Menu0.Add("Press 0 to Close");
+     Menu0.Add("");
+
+     foreach (String Menu in Menu0)
+     {
+        System.Console.WriteLine(Menu);
+     }
      }
      static void Correction()
      { 
@@ -288,23 +301,34 @@ class Program {
 
        static void Coder3()
     {
-         Console.WriteLine("------------------------");
+        Console.WriteLine("------------------------");
         Console.WriteLine(" |Selection of RPG Games|");
-         Console.WriteLine("------------------------");
-        Console.WriteLine("1. Final Fanstasy X");
-        Console.WriteLine("2. Elden ring");
-        Console.WriteLine("3. Dying Light 2");
-        Console.WriteLine("0. Back");
+        Console.WriteLine("------------------------");
+        List<string> Rpg = new List<string>();
+        Rpg.Add("1. Final Fanstasy X");
+        Rpg.Add("2. Elden ring");
+        Rpg.Add("3. Dying Light 2");
+        Rpg.Add("0. Back");
+        foreach (String RPG in Rpg)
+     {
+        System.Console.WriteLine(RPG);
+     }
      }
      static void Coder4()
     {
         Console.WriteLine("-----------------------------");
         Console.WriteLine("|Selection of Shooting Games|");
         Console.WriteLine("-----------------------------");
-        Console.WriteLine("1. Red dead redemption 2");
-        Console.WriteLine("2. Halo");
-        Console.WriteLine("3. Call of duty:Warzone");
-        Console.WriteLine("0. Back");
+        List<string> Shooting = new List<string>();
+       Shooting.Add("1. Red dead redemption 2");
+       Shooting.Add("2. Halo");
+       Shooting.Add("3. Call of duty:Warzone");
+       Shooting.Add("0. Back");
+       foreach (String SHOOT in Shooting)
+     {
+        System.Console.WriteLine(SHOOT);
+     }
+
     }
     static void Coder5()
     {
